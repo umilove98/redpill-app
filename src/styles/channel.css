@@ -53,6 +53,16 @@
   border: 2px solid rgba(255,255,255,0.2);
 }
 
+.ch-avatar-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+  border: 2px solid rgba(255,255,255,0.3);
+}
+
 .ch-info { min-width: 0; }
 
 .ch-name {
@@ -282,6 +292,15 @@
   font-size: 36px;
   font-weight: 800;
   color: rgba(255,255,255,0.7);
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+.clip-video-avatar-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
   border: 2px solid rgba(255,255,255,0.2);
 }
 

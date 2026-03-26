@@ -11,7 +11,7 @@ export function renderIgProfile(el, { char, data, onBack }) {
         <span class="ig-topbar-logo">📷 Instaram</span>
       </div>
       <div class="ig-profile">
-        <div class="ig-avatar">${char.name[0]}</div>
+        <img class="ig-avatar" src="/assets/characters/${char.id}/avatar.png" alt="${char.name}" />
         <div class="ig-profile-stats">
           <span><strong>${data.postCount}</strong><br>게시물</span>
           <span><strong>${data.followers.toLocaleString()}</strong><br>팔로워</span>

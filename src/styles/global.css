@@ -405,6 +405,12 @@ body {
   transition: filter 0.15s;
 }
 
+.thumb-avatar {
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .thumb-initial {
   font-size: 48px;
   font-weight: 800;
@@ -475,6 +481,20 @@ body {
   color: white;
   flex-shrink: 0;
   transition: box-shadow 0.2s;
+}
+
+.stream-avatar-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+  transition: box-shadow 0.2s;
+}
+
+.stream-card:hover .stream-avatar-img {
+  box-shadow: 0 0 0 2px var(--accent-purple), 0 0 10px var(--glow-purple);
 }
 
 .stream-card:hover .stream-avatar {

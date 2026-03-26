@@ -72,7 +72,7 @@ function openClipViewer(el, char, clip, clipIdx) {
             <span class="clip-video-title">${clip.title}</span>
             <span class="clip-video-live">LIVE</span>
           </div>
-          <div class="clip-video-avatar">${char.name[0]}</div>
+          <img class="clip-video-avatar-img" src="/assets/characters/${char.id}/avatar.png" alt="${char.name}" />
         </div>
         <div class="clip-video-bar">
           <span class="clip-bar-name">${char.name}</span>

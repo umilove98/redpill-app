@@ -13,7 +13,7 @@ export function renderXProfile(el, { char, data, onBack }) {
       <div class="x-profile">
         <div class="x-banner" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink)); height: 100px;"></div>
         <div class="x-profile-body">
-          <div class="x-avatar">${char.name[0]}</div>
+          <img class="x-avatar" src="/assets/characters/${char.id}/avatar.png" alt="${char.name}" />
           <div class="x-profile-info">
             <h3 class="x-display-name">${data.displayName}</h3>
             <span class="x-handle">${data.handle}</span>
@@ -34,7 +34,7 @@ export function renderXProfile(el, { char, data, onBack }) {
       <div class="x-feed">
         ${data.posts.map(post => `
           <div class="x-post">
-            <div class="x-post-avatar">${char.name[0]}</div>
+            <img class="x-post-avatar" src="/assets/characters/${char.id}/avatar.png" alt="" />
             <div class="x-post-body">
               <div class="x-post-header">
                 <span class="x-post-name">${data.displayName}</span>

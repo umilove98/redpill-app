@@ -43,14 +43,14 @@ async function loadCharacters() {
     <article class="stream-card" data-id="${c.id}">
       <div class="thumb">
         <div class="thumb-img" style="background: linear-gradient(135deg, ${thumbGradient(c.id)})">
-          <span class="thumb-initial">${c.name[0]}</span>
+          <img class="thumb-avatar" src="/assets/characters/${c.id}/avatar.png" alt="${c.name}" />
         </div>
         <span class="badge-live">LIVE</span>
         <span class="badge-viewers">${c.profile.concurrent.toLocaleString()}명</span>
         ${isComplete ? '<span class="badge-complete">판정 완료</span>' : ''}
       </div>
       <div class="stream-info">
-        <div class="stream-avatar">${c.name[0]}</div>
+        <img class="stream-avatar-img" src="/assets/characters/${c.id}/avatar.png" alt="${c.name}" />
         <div class="stream-text">
           <p class="stream-title">${c.profile.concept}</p>
           <p class="stream-name">${c.name} <span class="stream-handle">${c.handle}</span></p>

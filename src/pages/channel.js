@@ -31,7 +31,7 @@ export async function renderChannelContent(charId, { initialTab } = {}) {
   container.innerHTML = `
     <div class="ch-banner" style="background: linear-gradient(135deg, ${bannerGradient(charId)})">
       <div class="ch-profile">
-        <div class="ch-avatar">${currentChar.name[0]}</div>
+        <img class="ch-avatar-img" src="/assets/characters/${charId}/avatar.png" alt="${currentChar.name}" />
         <div class="ch-info">
           <h2 class="ch-name">${currentChar.name}</h2>
           <p class="ch-handle">${currentChar.handle}</p>
