@@ -1,0 +1,291 @@
+[
+  {
+    "id": "sora",
+    "name": "하늘별 소라",
+    "handle": "@starlight_sora",
+    "round": "R1",
+    "type": "fake",
+    "verdictAnswer": {
+      "gender": "남성",
+      "ageGroup": "30대 이상",
+      "education": "학력 사칭",
+      "overall": "완전 사칭"
+    },
+    "profile": {
+      "bio": "22살, 한별공대 물리학과 재학 중인 과학 덕후 버튜버! 낮에는 양자역학 공부하고 밤에는 게임 방송하는 이중생활 중~",
+      "concept": "과학 잡학 + 공포게임 리액션. \"두뇌섹시 버튜버\"",
+      "tags": ["과학", "공포게임", "리액션", "물리학", "한별공대"],
+      "subscribers": "12.4K",
+      "concurrent": 847,
+      "clipCount": 203,
+      "appearance": "하늘색 머리, 별 헤어핀, 세일러복+망토, 청순 미소녀"
+    },
+    "reality": {
+      "realAge": 31,
+      "realGender": "남성",
+      "realBackground": "대학 중퇴. 과학 지식은 유튜브/위키에서 습득",
+      "lieScope": ["성별", "나이", "학력", "외모"],
+      "motive": "학력 콤플렉스 → 사칭 → 유명세 → 투자 사기 준비"
+    },
+    "difficulty": 2,
+    "hints": {
+      "chat": [
+        {
+          "question": "오늘 학교에서 뭐 했어요?",
+          "answer": "오늘 양자역학 수업 들었는데 교수님이 슈뢰딩거 방정식 증명을 칠판 가득 쓰셨어ㅠㅠ",
+          "analysis": "서치라이트에서 한별공대 학사일정 조회 시 해당 요일에 물리학과 수업 없음",
+          "strength": "weak"
+        },
+        {
+          "question": "은하시 맛집 추천해주세요! 학교 근처로요",
+          "answer": "음... 달빛동 쪽에 맛있는 데 많아!",
+          "analysis": "달빛동은 한별공대(별내동) 근처가 아님",
+          "strength": "medium"
+        },
+        {
+          "question": "해밀토니안이 시간 의존적일 때 어떻게 풀어요?",
+          "answer": "아 그건... 섭동론 쓰면 되지! 근데 방송에서 그런 어려운 얘기 하면 시청자들 도망가~",
+          "analysis": "답 자체는 틀리지 않지만 회피 패턴",
+          "strength": "medium"
+        },
+        {
+          "question": "한별공대 축제 때 어떤 동아리에서 활동하셨어요?",
+          "answer": "동아리는... 천문 동아리! 별 관측하는 거 좋아해서~",
+          "analysis": "서치라이트에서 한별공대 동아리 목록 조회 시 천문 동아리 존재하지 않음",
+          "strength": "killer"
+        }
+      ],
+      "metadata": [
+        { "item": "방송 시간대", "content": "월~금 오후 2시~6시 정규 방송", "strength": "strong", "_analysis": "3학년이면 매일 오후 공강은 비현실적" },
+        { "item": "채널 개설일", "content": "2024년 3월 15일", "strength": "medium", "_analysis": "물리학과 3학년(2022 입학 추정)인데 채널은 2024년 개설 — '1학년 때부터' 주장과 2년 갭" },
+        { "item": "첫 방송 자기소개", "content": "\"1학년 때부터 방송 해보고 싶었는데 드디어!\" (2024.03.15)", "strength": "medium", "_analysis": "채널 개설일과 대조하면 1학년(2022)부터가 아님" },
+        { "item": "배경 소음 분석", "content": "간헐적으로 '삐—' 전자음, 자동문 개폐음 감지", "strength": "medium", "_analysis": "편의점 계산음. 대학 기숙사/자취방이 아닌 상업건물 원룸 추정" }
+      ],
+      "community": [
+        { "content": "한별공대 물리학과에 소라 아는 사람 없음", "reliability": "high", "type": "real" },
+        { "content": "목소리 변조 100% 확실", "reliability": "low", "type": "noise" },
+        { "content": "본인 사진 유출 [링크]", "reliability": "danger", "type": "trap" },
+        { "content": "해변도시 자주 갔다 vs 은하시 토박이 모순", "reliability": "high", "type": "real" }
+      ],
+      "sns": [
+        { "item": "팔로우 목록", "content": "학술 계정 0개. FPS 프로팀, 위스키 브랜드 팔로우", "strength": "medium" },
+        { "item": "과거 트윗", "content": "퇴근하고 치맥 — 직장인 감성 트윗 잔존", "strength": "killer" },
+        { "item": "사진 메타데이터", "content": "캠퍼스 하늘 사진 촬영 위치가 은하시 아닌 다른 도시", "strength": "strong" }
+      ],
+      "voiceAnalysis": {
+        "report": "남성 바리톤 범위(F2~F3) 추정. 신뢰도: 78%",
+        "confidence": 78,
+        "trap": "진짜 여성 버튜버도 60% 감지되는 경우 있음. 맹신하면 오판"
+      }
+    },
+    "redpillScene": {
+      "type": "full_reveal",
+      "description": "도트 아바타 → 글리치 → 실사풍 아저씨 AI GIF 전환. 음성 변조 해제 효과음",
+      "epilogue": "입시 실패 → 학력 콤플렉스 → 사칭으로 관심 → 웹 게시판 키보드배틀 이력 → 뒤로는 투자 사기 준비"
+    },
+    "assets": {
+      "avatar": "assets/characters/sora/avatar.png",
+      "expressions": {
+        "default": ["assets/characters/sora/face_default_a.png", "assets/characters/sora/face_default_b.png"],
+        "smile": ["assets/characters/sora/face_smile_a.png", "assets/characters/sora/face_smile_b.png"],
+        "embarrassed": ["assets/characters/sora/face_embarrassed_a.png", "assets/characters/sora/face_embarrassed_b.png"],
+        "angry": ["assets/characters/sora/face_angry_a.png", "assets/characters/sora/face_angry_b.png"]
+      },
+      "redpillGif": "assets/characters/sora/redpill.gif",
+      "banner": "assets/characters/sora/banner.png",
+      "thumbnails": ["assets/characters/sora/thumbs/thumb_01.png", "assets/characters/sora/thumbs/thumb_02.png", "assets/characters/sora/thumbs/thumb_03.png"]
+    }
+  },
+  {
+    "id": "leon",
+    "name": "새벽달 리온",
+    "handle": "@dawn_leon",
+    "round": "R1",
+    "type": "partial_fake",
+    "verdictAnswer": {
+      "gender": "여성",
+      "ageGroup": "20대 초반",
+      "education": "학력 사칭",
+      "overall": "부분 거짓"
+    },
+    "profile": {
+      "bio": "은하예술대학 작곡과 리온이에요. 매일 밤 비트 만들고 작곡하는 뮤직 버튜버! 제가 만든 곡으로 같이 놀아요~",
+      "concept": "음악/작곡 방송. 쿨한 성격",
+      "tags": ["작곡", "비트메이킹", "음악", "은하예대", "DAW"],
+      "subscribers": "15.7K",
+      "concurrent": 1102,
+      "clipCount": 287,
+      "appearance": "은발 단발, 헤드폰, 검정 후드+보라색 이너, 날카로운 눈매, 쿨한 인상"
+    },
+    "reality": {
+      "realAge": 23,
+      "realGender": "여성",
+      "realBackground": "은하예술대학 실용음악과 보컬 전공 (작곡과 아님)",
+      "lieScope": ["학력"],
+      "motive": "작곡과 지망 탈락 → 보컬 입학 → 작곡에 대한 미련 → 차별화 목적"
+    },
+    "difficulty": 1,
+    "hints": {
+      "chat": [
+        {
+          "question": "오늘 학교에서 뭐 했어요?",
+          "answer": "작곡 수업 듣고 왔어요~ 교수님이 화성학 과제를 또 내셨는데 머리 터질 것 같아요",
+          "analysis": "화성학은 작곡과/실용음악과 모두 있어서 구별 불가",
+          "strength": "weak"
+        },
+        {
+          "question": "작곡할 때 어떤 DAW 쓰세요?",
+          "answer": "FL Studio 메인으로 쓰고 있어요! 비트 만들기 편해서~",
+          "analysis": "FL Studio는 작곡과 필수 SW 목록에 없음. 실용음악과에서 주로 사용",
+          "strength": "medium"
+        },
+        {
+          "question": "작곡과에서 오케스트레이션 수업 어때요?",
+          "answer": "오케스트레이션? 아 그거 아직 안 들었어요~ 다음 학기에 들을 것 같아요!",
+          "analysis": "오케스트레이션은 2학년 필수. 3학년이면 이미 수강했어야 함",
+          "strength": "killer"
+        },
+        {
+          "question": "방송에서 가끔 흥얼거리시는데 노래도 잘하시네요!",
+          "answer": "에이 저는 그냥 취미로요~ 작곡이 본업이죠!",
+          "analysis": "보이스 트레이닝을 받은 사람 특유의 발성과 호흡이 보임",
+          "strength": "medium"
+        }
+      ],
+      "metadata": [
+        { "item": "방송 시간대", "content": "밤 10시~새벽 1시 정규 방송", "strength": "neutral", "_analysis": "예술대학 학생 시간대로 그럴듯함" },
+        { "item": "채널 개설일", "content": "2023년 9월 2일 (은하예대 2학기 개강 시즌)", "strength": "neutral", "_analysis": "입학 시점과 일치. 문제 없음" },
+        { "item": "배경 소음 분석", "content": "간헐적으로 다른 방에서 보컬 발성 연습 비슷한 소리 감지", "strength": "medium", "_analysis": "작곡과인데 왜 보컬 연습 소리? 실용음악과 보컬 전공 가능성" },
+        { "item": "최근 방송 중 발언", "content": "\"작곡과 3학년이라 졸업작품 준비해야 하는데 방송이 더 재밌어\"", "strength": "neutral", "_analysis": "3학년이면 오케스트레이션I(2학년 필수) 이수했어야 함" }
+      ],
+      "community": [
+        { "content": "리온이 만든 곡 들어봤는데 작곡과 수준치고 좀 단순한 것 같음", "reliability": "medium", "type": "real" },
+        { "content": "은하예대 다니는 건 확실함 학교 축제 때 봤음", "reliability": "high", "type": "real" },
+        { "content": "리온 노래 진짜 잘함 ㅋㅋ 작곡보다 보컬이 낫지 않나", "reliability": "medium", "type": "real" },
+        { "content": "작곡과 커리큘럼 보니까 리온이 말한 과목 중에 없는 게 있던데", "reliability": "high", "type": "real" }
+      ],
+      "sns": [
+        { "item": "팔로우 목록", "content": "작곡 관련 계정도 있지만 보컬 트레이닝 계정, 노래 커버 채널을 더 많이 팔로우", "strength": "strong" },
+        { "item": "과거 트윗", "content": "데뷔 전 '오늘 보컬 레슨 힘들었다' '고음 연습 중' 등 보컬 관련 트윗 다수", "strength": "killer" },
+        { "item": "사진", "content": "녹음 부스에서 찍은 셀카. 마이크 앞에서 노래하는 포즈", "strength": "medium" }
+      ],
+      "voiceAnalysis": {
+        "report": "음성 보정 흔적 없음. 여성 메조소프라노 범위. 신뢰도: 95%. 전문 보컬 트레이닝 흔적 감지",
+        "confidence": 95,
+        "trap": "작곡과 학생이 취미로 보컬을 배울 수도 있으므로 단독 확정 불가"
+      }
+    },
+    "redpillScene": {
+      "type": "partial_reveal",
+      "description": "아바타 유지 + 배경에 '작곡과 → 보컬 전공' 텍스트 글리치 겹침",
+      "epilogue": "작곡을 하고 싶었지만 작곡과에 떨어졌고, 보컬로 입학한 뒤에도 꿈을 놓지 못해 독학으로 곡을 만들고 있다. 방송에서만큼은 작곡가로 살고 싶었다."
+    },
+    "assets": {
+      "avatar": "assets/characters/leon/avatar.png",
+      "expressions": {
+        "default": ["assets/characters/leon/face_default_a.png", "assets/characters/leon/face_default_b.png"],
+        "smile": ["assets/characters/leon/face_smile_a.png", "assets/characters/leon/face_smile_b.png"],
+        "embarrassed": ["assets/characters/leon/face_embarrassed_a.png", "assets/characters/leon/face_embarrassed_b.png"],
+        "angry": ["assets/characters/leon/face_angry_a.png", "assets/characters/leon/face_angry_b.png"]
+      },
+      "banner": "assets/characters/leon/banner.png",
+      "thumbnails": ["assets/characters/leon/thumbs/thumb_01.png", "assets/characters/leon/thumbs/thumb_02.png", "assets/characters/leon/thumbs/thumb_03.png"]
+    }
+  },
+  {
+    "id": "miru",
+    "name": "달콩 미루",
+    "handle": "@dalcong_miru",
+    "round": "R1",
+    "type": "real",
+    "verdictAnswer": {
+      "gender": "여성",
+      "ageGroup": "20대 초반",
+      "education": "주장대로 사실",
+      "overall": "프로필 일치"
+    },
+    "profile": {
+      "bio": "은하시 유명 한식당 '달빛헌'에서 일한 적 있는 요리 버튜버 달콩미루입니다♥ 주방에서 배운 것들로 매일 맛있는 거 만들어서 같이 먹어요~",
+      "concept": "먹방 + 자유로운 요리 방송",
+      "tags": ["먹방", "요리", "한식", "달빛헌", "레시피"],
+      "subscribers": "8.2K",
+      "concurrent": 423,
+      "clipCount": 156,
+      "appearance": "복숭아 머리, 분홍 앵프런, 대형 리본, 통통한 체형, 먹방 컨셉"
+    },
+    "reality": {
+      "realAge": 24,
+      "realGender": "여성",
+      "realBackground": "달빛헌 오너쉘프 딸. 실제 주방에서 일했음. 파인다이닝이 싫어서 독립",
+      "lieScope": [],
+      "motive": "없음 (진짜). 초기 인지도를 위해 식당 이력만 전략적으로 공개"
+    },
+    "difficulty": 2,
+    "hints": {
+      "chat": [
+        {
+          "question": "달빛헌에서 뭐 담당하셨어요?",
+          "answer": "저는... 주방 보조? 같은 거였어요. 이것저것 다 했어요 ㅎㅎ",
+          "analysis": "딸이라 공식 직책 없이 주방에서 자란 것. 함정 — 거짓말처럼 들림",
+          "strength": "trap"
+        },
+        {
+          "question": "달빛헌 시그니처 갈비찜 레시피 알려주세요!",
+          "answer": "아... 그건 함부로 알려줄 수가 없어요ㅠㅠ 대신 제가 만든 갈비찜 레시피 알려줄까요?",
+          "analysis": "아버지 레시피라 딸 입장에서 공개 못 하는 것. 함정",
+          "strength": "trap"
+        },
+        {
+          "question": "달빛헌 주방에서 가장 기억에 남는 게 뭐예요?",
+          "answer": "새벽에 육수 끓이는 냄새가 2층까지 올라왔는데... 그 냄새가 싫었어요. 지금은 그리운데. 아, 그리고 주방 뒤쪽 마당에 장독대가 있거든요, 거기서 놀았던 기억이...",
+          "analysis": "2층=가족 거주 공간, 장독대=후원. '거기서 살았던 사람'의 기억. 결정적 진짜 단서",
+          "strength": "killer"
+        },
+        {
+          "question": "달빛헌이 은하시 어디에 있어요?",
+          "answer": "달빛동 큰길에서 골목 하나 들어가면 있어요! 간판이 좀 작아서 지나칠 수 있는데 돌담장 보이면 맞아요~ 근데 월요일은 쉬니까 화요일 이후에 가세요!",
+          "analysis": "위치·정기휴일 정확. 위키와 대조하면 일치 확인",
+          "strength": "real_clue"
+        }
+      ],
+      "metadata": [
+        { "item": "방송 시간대", "content": "저녁 7시~10시 정규 방송", "strength": "trap", "_analysis": "식당 영업시간과 겹침 — 현재 식당에서 일하고 있지 않음(독립/퇴직)" },
+        { "item": "채널 개설일", "content": "2025년 4월 8일", "strength": "real_clue", "_analysis": "약 1년 전. 달빛헌 '관계자 퇴사' 기사 시점과 일치 (실제로는 딸의 독립)" },
+        { "item": "배경 소음 분석", "content": "일반적인 자취방 환경음. 식당이나 주방 관련 소음 없음", "strength": "trap", "_analysis": "식당 직원이면 식당에서 방송할 법한데 — 독립한 것이라 당연" },
+        { "item": "프로필 기재사항", "content": "\"은하시 유명 한식당 '달빛헌'에서 일한 적 있음\"", "strength": "neutral", "_analysis": "'일한 적 있다'만 주장. 소박해서 거짓말할 이유가 없어 보이지만 실은 딸" }
+      ],
+      "community": [
+        { "content": "달빛헌 단골인데 직원 중에 미루 닮은 사람 본 적 없음", "reliability": "medium", "type": "trap" },
+        { "content": "달빛헌 사장님 딸이 버튜버 한다는 소문 들었는데 혹시 미루?", "reliability": "high", "type": "real" },
+        { "content": "달빛헌 공식 인스타에 미루 언급 없음. 진짜 일했으면 직원 소개에 있을 텐데?", "reliability": "high", "type": "trap" },
+        { "content": "미루 요리 실력이 유명 식당 출신치고 좀 부족한 것 같은데 ㅋㅋ", "reliability": "low", "type": "noise" }
+      ],
+      "sns": [
+        { "item": "팔로우 목록", "content": "달빛헌 공식 계정을 팔로우하지만 팔로우백 안 받음", "strength": "trap" },
+        { "item": "과거 트윗", "content": "1년 전 '내 길을 가기로 했다' '미안해요' 같은 감정적 트윗", "strength": "real_clue" },
+        { "item": "사진", "content": "어린 시절 한복 입고 식당 앞에서 찍은 사진. 배경 돌담장이 달빛헌 사진과 일치", "strength": "killer" }
+      ],
+      "voiceAnalysis": {
+        "report": "음성 보정 흔적 없음. 여성 소프라노 범위. 신뢰도: 92%",
+        "confidence": 92,
+        "trap": "높은 음역대라 '변조' 의심이 있지만 보정 흔적 없음"
+      }
+    },
+    "redpillScene": {
+      "type": "none",
+      "description": "빨간약 없음 (진짜). 프로필 일치 확인",
+      "epilogue": "사실 미루는 달빛헌 오너셰프의 딸이었습니다. 가업을 잇지 않고 버튜버의 길을 선택해 가족과 갈등 중이며, 그래서 '일한 적 있다'고만 말한 것입니다."
+    },
+    "assets": {
+      "avatar": "assets/characters/miru/avatar.png",
+      "expressions": {
+        "default": ["assets/characters/miru/face_default_a.png", "assets/characters/miru/face_default_b.png"],
+        "smile": ["assets/characters/miru/face_smile_a.png", "assets/characters/miru/face_smile_b.png"],
+        "embarrassed": ["assets/characters/miru/face_embarrassed_a.png", "assets/characters/miru/face_embarrassed_b.png"],
+        "angry": ["assets/characters/miru/face_angry_a.png", "assets/characters/miru/face_angry_b.png"]
+      },
+      "banner": "assets/characters/miru/banner.png",
+      "thumbnails": ["assets/characters/miru/thumbs/thumb_01.png", "assets/characters/miru/thumbs/thumb_02.png", "assets/characters/miru/thumbs/thumb_03.png"]
+    }
+  }
+]

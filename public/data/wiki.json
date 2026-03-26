@@ -1,0 +1,124 @@
+{
+  "city": {
+    "name": "은하시",
+    "description": "교육·문화·전통이 공존하는 중규모 도시. 세계적 수준의 공과대학과 예술대학이 있는 학술 도시이면서, 오래된 전통 먹거리 상권도 공존.",
+    "structure": "은하시 → 동"
+  },
+  "districts": [
+    {
+      "id": "byeolnae",
+      "name": "별내동",
+      "type": "대학가 / 연구단지",
+      "description": "카페와 서점이 많은 조용한 대학가. 소규모 엘리트 학교라 학생 수가 적어 타 대학가에 비해 조용함",
+      "keyPlace": "한별공대",
+      "facilities": ["별내공원", "연구원단지", "카페거리"],
+      "hint": "달빛동과 거리가 멀다"
+    },
+    {
+      "id": "dalbit",
+      "name": "달빛동",
+      "type": "전통 먹거리 상권 / 관광 명소",
+      "description": "돌담길과 한옥 개조 식당이 많은 분위기 있는 동네. 관광객도 많이 찾는 은하시의 맛집 거리",
+      "keyPlace": "달빛헌",
+      "facilities": ["전통시장", "맛집골목", "문화체험관"]
+    },
+    {
+      "id": "eunha",
+      "name": "은하동",
+      "type": "문화 / 예술 지구",
+      "description": "갤러리, 공연장, 라이브 바가 밀집. 젊은 예술가들이 모이는 활기찬 동네",
+      "keyPlace": "은하예술대학",
+      "facilities": ["갤러리거리", "공연장", "버스킹 존", "라이브 바"]
+    }
+  ],
+  "places": [
+    {
+      "id": "hanbyeol",
+      "name": "한별공대 (한별공과대학교)",
+      "district": "별내동",
+      "type": "university",
+      "info": {
+        "description": "4년제 공과 특화 대학. 소규모 엘리트. 세계 대학 랭킹 공학 부문 상위 20위권",
+        "enrollment": "학부 정원 약 300명/학년 (전체 재학생 ~1,200명)",
+        "departments": ["전자공학과", "컴퓨터공학과", "기계공학과", "신소재공학과", "물리학과", "화학공학과", "수리과학과"],
+        "clubs": [
+          "로켓공학회 (로켓 설계/제작)",
+          "RoboHanbyeol (로봇 경진대회)",
+          "CodeLab (알고리즘/해커톤)",
+          "양자컴퓨팅연구회",
+          "E-Sports (교내 게임 동아리)",
+          "산악회 '정상'"
+        ],
+        "clubNote": "소규모 공대 특화 학교라 순수 관측 동아리 미개설",
+        "schedule": {
+          "physics3rd": {
+            "mon": "고체물리학, 전자기학II",
+            "tue": "양자역학III, 물리실험",
+            "wed": "공강 (수업 없음)",
+            "thu": "통계역학, 세미나",
+            "fri": "양자역학III, 물리실험"
+          },
+          "semester": "3월~6월 (1학기), 9월~12월 (2학기)",
+          "festival": "10월 '별내제'"
+        },
+        "admission": {
+          "competitionRate": "약 15:1 (2025년 기준)",
+          "method": "수학+과학 필기시험 + 심층면접",
+          "note": "세계 랭킹 상위권 엘리트 학교라 입시 난이도 매우 높음"
+        }
+      }
+    },
+    {
+      "id": "dalbitheun",
+      "name": "달빛헌",
+      "district": "달빛동",
+      "type": "restaurant",
+      "info": {
+        "description": "은하시 달빛동 소재 유명 한식당. 전통 한식 파인다이닝. 예약제 운영",
+        "owner": "박도현 (미루의 아버지)",
+        "closedDay": "월요일",
+        "location": "달빛동 큰길에서 골목 하나 들어가면, 돌담장 보이면 맞음",
+        "award": "은하시 미식 가이드 3년 연속 선정",
+        "structure": {
+          "floor1": "식당 (주방 + 홀)",
+          "floor2": "오너셰프 가족 거주 공간",
+          "backyard": "전통 장독대 보유"
+        },
+        "signature": ["전통 갈비찜 (예약 필수)", "계절 한정 코스"],
+        "relatedArticle": "약 1년 전: '달빛헌 관계자 퇴사' (실제로는 미루(딸)의 독립)"
+      }
+    },
+    {
+      "id": "eunha_arts",
+      "name": "은하예술대학 (은하예대)",
+      "district": "은하동",
+      "type": "university",
+      "info": {
+        "description": "4년제 예술 종합대학. 음악, 미술, 무용, 연극 등 예술 전반",
+        "musicDepartments": ["작곡과", "실용음악과", "국악과", "성악과"],
+        "composition": {
+          "focus": "클래식 작곡 중심",
+          "curriculum": {
+            "year1": "화성학I·II, 시창·청음, 음악이론",
+            "year2": "대위법, 오케스트레이션I, 전자음악 기초",
+            "year3": "오케스트레이션II, 영화음악, 졸업작품 준비",
+            "year4": "졸업작품 발표"
+          },
+          "requiredSoftware": ["Sibelius (악보 사보)", "Finale (악보 사보)", "Logic Pro (작·편곡)"],
+          "note": "FL Studio는 목록에 없음 (실용음악과 프로듀싱 전공에서 주로 사용)"
+        },
+        "appliedMusic": {
+          "vocalMajor": {
+            "subjects": ["보이스 트레이닝", "무대 퍼포먼스", "레코딩 실습"],
+            "facilities": "녹음 부스 사용 가능",
+            "software": ["FL Studio", "Ableton Live", "Pro Tools"]
+          }
+        },
+        "admission": {
+          "composition": "화성학 필기시험 + 자작곡 제출 + 면접 (경쟁률 높음)",
+          "vocalApplied": "실기(노래) + 면접"
+        }
+      }
+    }
+  ]
+}

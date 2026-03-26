@@ -1,0 +1,99 @@
+{
+  "sora": {
+    "x": {
+      "handle": "@starlight_sora",
+      "displayName": "하늘별 소라 ⭐",
+      "bio": "한별공대 물리학과 | 과학 잡학 버튜버 | 밤엔 공포겜 🎮",
+      "joined": "2024년 3월",
+      "following": 342,
+      "followers": 12400,
+      "followList": ["FPS_ProTeam", "WhiskyBrand_Official", "GamingNews_KR", "HorrorGame_Clips"],
+      "posts": [
+        { "text": "오늘 방송 재밌었어! 슈뢰딩거 방정식 설명하다가 시청자들 다 도망갔지만ㅋㅋ 내일도 2시에 만나요~", "time": "3시간 전", "likes": 234, "retweets": 12 },
+        { "text": "공포겜 신작 나왔다!!! 오늘 밤 방송에서 해볼게요 기대하셈", "time": "1일 전", "likes": 456, "retweets": 28 },
+        { "text": "양자역학 공부하다 멘붕 온 날에는 치맥이 답이다 🍗🍺", "time": "3일 전", "likes": 89, "retweets": 3 },
+        { "text": "퇴근하고 치맥 최고... 아 이거 아니고 하교하고 치맥 최고 ㅎㅎ", "time": "2024년 5월", "likes": 12, "retweets": 0, "_hint": true, "_analysis": "직장인 감성 트윗 → '퇴근' 후 '하교'로 수정. 사칭 전 습관 잔존" },
+        { "text": "과학 교육 스타트업 관심 있는 분?? DM 주세요 같이 해봐요!", "time": "2024년 4월", "likes": 67, "retweets": 8, "_hint": true, "_analysis": "투자 사기 준비 정황" },
+        { "text": "해운대 놀러왔는데 바다 진짜 좋다 🌊", "time": "2024년 3월", "likes": 45, "retweets": 2, "_hint": true, "_analysis": "은하시 토박이라면서 해변도시를 자주 감" }
+      ]
+    },
+    "insta": {
+      "handle": "starlight_sora",
+      "displayName": "하늘별 소라 ⭐",
+      "bio": "과학 덕후 버튜버 ✨ 한별공대 물리학과",
+      "postCount": 47,
+      "followers": 8200,
+      "following": 215,
+      "posts": [
+        { "caption": "오늘의 캠퍼스 하늘 🌤️ #한별공대 #캠퍼스", "time": "1주 전", "likes": 342, "_hint": true, "_analysis": "사진 메타데이터 촬영 위치가 은하시가 아닌 부산" },
+        { "caption": "방송 세팅 완료! 오늘도 과학 잡학 방송 시작합니다~", "time": "2주 전", "likes": 567 },
+        { "caption": "새 마이크 샀다 🎙️ 음질 업그레이드!", "time": "3주 전", "likes": 234 },
+        { "caption": "위스키 컬렉션 자랑 🥃 #위스키 #싱글몰트", "time": "1개월 전", "likes": 123, "_hint": true, "_analysis": "22살 여대생 컨셉인데 위스키 컬렉션?" }
+      ]
+    }
+  },
+  "leon": {
+    "x": {
+      "handle": "@dawn_leon",
+      "displayName": "새벽달 리온 🎵",
+      "bio": "은하예술대학 작곡과 | 비트메이킹 | 매일 밤 음악 방송",
+      "joined": "2023년 9월",
+      "following": 187,
+      "followers": 15700,
+      "followList": ["VocalTrainer_KR", "SingingCover_CH", "BeatMaker_Official", "FL_Studio_Tips"],
+      "posts": [
+        { "text": "오늘 만든 비트 괜찮은 것 같은데 내일 방송에서 공개할게요!", "time": "5시간 전", "likes": 389, "retweets": 22 },
+        { "text": "FL Studio 업데이트 됐다 새 기능 미쳤음", "time": "1일 전", "likes": 234, "retweets": 15, "_hint": true, "_analysis": "작곡과면 Sibelius/Finale 위주일 텐데 FL Studio에 관심" },
+        { "text": "고음 연습하다 목 나갔다... 꿀물 마시는 중 🍯", "time": "2024년 8월", "likes": 56, "retweets": 1, "_hint": true, "_analysis": "데뷔 전 '고음 연습' = 보컬 트레이닝 흔적" },
+        { "text": "오늘 보컬 레슨 힘들었다 선생님이 호흡부터 다시 하래 ㅠ", "time": "2024년 6월", "likes": 23, "retweets": 0, "_hint": true, "_analysis": "작곡 전공이 보컬 레슨을 받는 건 이상함" },
+        { "text": "작곡이라는 건 결국 감정을 음표에 담는 거니까... 오늘도 새벽까지 작업!", "time": "2024년 3월", "likes": 178, "retweets": 9 }
+      ]
+    },
+    "insta": {
+      "handle": "dawn_leon",
+      "displayName": "새벽달 리온 🎵",
+      "bio": "Music is life 🎹 은하예대 작곡과",
+      "postCount": 63,
+      "followers": 11200,
+      "following": 298,
+      "posts": [
+        { "caption": "새벽 작업실 뷰 🌙 #비트메이킹 #FL스튜디오", "time": "3일 전", "likes": 445 },
+        { "caption": "녹음 부스에서 📸", "time": "1주 전", "likes": 678, "_hint": true, "_analysis": "마이크 앞에서 노래하는 포즈. 작곡 작업 환경과 다름" },
+        { "caption": "보컬 커버 채널도 해볼까 고민 중...", "time": "2주 전", "likes": 234, "_hint": true, "_analysis": "작곡과인데 보컬 커버에 관심" },
+        { "caption": "오늘의 장비 세팅 🎧 #음악방송 #DAW", "time": "1개월 전", "likes": 345 }
+      ]
+    }
+  },
+  "miru": {
+    "x": {
+      "handle": "@dalcong_miru",
+      "displayName": "달콩 미루 🍳",
+      "bio": "요리 버튜버 | 달빛헌에서 일한 적 있어요 | 매일 맛있는 거 만들어요♥",
+      "joined": "2025년 4월",
+      "following": 156,
+      "followers": 8200,
+      "followList": ["DalbitHeon_Official", "CookingRecipe_KR", "HomeFood_Daily", "은하시맛집탐방"],
+      "posts": [
+        { "text": "오늘 된장찌개 진짜 잘 됐다!! 레시피는 방송에서 공개할게요~", "time": "2시간 전", "likes": 145, "retweets": 5 },
+        { "text": "자취 시작한지 1년... 이제 좀 적응된 것 같아요 ㅎㅎ", "time": "3일 전", "likes": 89, "retweets": 2 },
+        { "text": "내 길을 가기로 했다. 후회는 없어... 아마도.", "time": "2025년 4월", "likes": 34, "retweets": 0, "_hint": true, "_analysis": "가업 거부 시점의 감정적 트윗" },
+        { "text": "미안해요. 근데 저도 제 인생을 살고 싶어요.", "time": "2025년 4월", "likes": 12, "retweets": 0, "_hint": true, "_analysis": "가족에게 보내는 듯한 메시지" },
+        { "text": "새로운 시작! 요리 방송 해보려구요 많이 봐주세요 ♥", "time": "2025년 4월", "likes": 67, "retweets": 3 }
+      ]
+    },
+    "insta": {
+      "handle": "dalcong_miru",
+      "displayName": "달콩 미루 🍳",
+      "bio": "요리 버튜버 🍴 은하시",
+      "postCount": 31,
+      "followers": 5400,
+      "following": 142,
+      "posts": [
+        { "caption": "오늘의 자취요리 🍳 #요리방송 #먹방", "time": "1일 전", "likes": 234 },
+        { "caption": "달빛헌 갈비찜이 그리운 밤... 직접 만들어봤는데 역시 그 맛은 안 나와요 ㅠ", "time": "1주 전", "likes": 456 },
+        { "caption": "어린 시절 📸 돌담장 앞에서 한복 입고", "time": "2주 전", "likes": 678, "_hint": true, "_analysis": "배경 돌담장이 달빛헌 사진과 일치. 어린 시절 = 직원이 아닌 가족" },
+        { "caption": "엄마가 해주던 된장찌개 맛을 찾아서... #추억의맛", "time": "1개월 전", "likes": 345, "_hint": true, "_analysis": "'엄마가 해주던' = 달빛헌 주방에서의 가족 추억" }
+      ]
+    }
+  }
+}

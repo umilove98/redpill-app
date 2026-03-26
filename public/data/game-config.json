@@ -1,0 +1,29 @@
+{
+  "rounds": [
+    {
+      "id": "R1",
+      "name": "튜토리얼",
+      "characterIds": ["sora", "leon", "miru"],
+      "investigationPoints": 15,
+      "pointCosts": {
+        "clipView": 2,
+        "chatQuestion": 3,
+        "communityReveal": 1,
+        "snsReveal": 1,
+        "voiceAnalysis": 2,
+        "searchlight": 1
+      }
+    }
+  ],
+  "verdictCategories": [
+    { "id": "gender", "label": "성별", "options": ["여성", "남성", "판단 불가"] },
+    { "id": "ageGroup", "label": "나이대", "options": ["20대 초반", "20대 후반", "30대 이상", "판단 불가"] },
+    { "id": "education", "label": "학력", "options": ["주장대로 사실", "학력 사칭", "판단 불가"] },
+    { "id": "overall", "label": "종합 판정", "options": ["프로필 일치", "부분 거짓", "완전 사칭"] }
+  ],
+  "trustGauge": {
+    "initial": 100,
+    "wrongPenalty": -25,
+    "badEndingThreshold": 0
+  }
+}

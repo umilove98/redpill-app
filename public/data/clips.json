@@ -1,0 +1,164 @@
+{
+  "sora": [
+    {
+      "id": "sora_clip_01",
+      "title": "양자역학 쉽게 설명해드림ㅋㅋ",
+      "duration": "2:34",
+      "views": "4.2K",
+      "gradient": "#4facfe, #00f2fe",
+      "chatLog": [
+        { "user": "별빛수호자", "badge": null, "text": "오 설명 잘한다" },
+        { "user": "퀀텀보이", "badge": "subscriber", "text": "소라 오늘도 두뇌섹시" },
+        { "user": "물리학도", "badge": null, "text": "근데 슈뢰딩거 방정식 설명이 좀 이상한데...", "isHint": true, "hintNote": "전공자가 보기에 설명이 부정확함" },
+        { "user": "게임러", "badge": null, "text": "공포겜은 언제 해요??" },
+        { "user": "starfan_22", "badge": "subscriber", "text": "소라짱 오늘 뭐 먹었어?" },
+        { "user": "한별공대생", "badge": null, "text": "우리 학교에 소라 아는 사람이 없는데ㅋㅋ", "isHint": true, "hintNote": "한별공대 재학생의 직접 증언" },
+        { "user": "달콩팬", "badge": null, "text": "미루 방송에서 넘어옴ㅋ" },
+        { "user": "수학귀신", "badge": null, "text": "해밀토니안 어쩌고 하니까 시청자 다 도망감" },
+        { "user": "소라사랑해", "badge": "subscriber", "text": "♥♥♥♥♥♥" },
+        { "user": "호기심왕", "badge": null, "text": "소라 학교 축제 때 뭐했어요?" }
+      ]
+    },
+    {
+      "id": "sora_clip_02",
+      "title": "공포게임 리액션 모음 (비명주의)",
+      "duration": "5:12",
+      "views": "8.7K",
+      "gradient": "#0f2027, #203a43",
+      "chatLog": [
+        { "user": "겁쟁이", "badge": null, "text": "아아아 나도 놀랐어" },
+        { "user": "프로관전러", "badge": null, "text": "리액션 맛집 인정" },
+        { "user": "음성분석가", "badge": null, "text": "지금 소라 비명 음역대가 좀 이상하지 않음...? 바리톤 같은데", "isHint": true, "hintNote": "비명 시 음성 변조가 불안정해짐" },
+        { "user": "starfan_22", "badge": "subscriber", "text": "ㅋㅋㅋㅋ 진짜 무서운가봐" },
+        { "user": "클립장인", "badge": null, "text": "이거 클립 떠야함" },
+        { "user": "새벽시청자", "badge": null, "text": "오후 3시에 학교 안 가고 방송하는거 매번 신기함", "isHint": true, "hintNote": "3학년이 매일 오후 공강은 비현실적" },
+        { "user": "별사탕", "badge": null, "text": "소라 목소리 너무 좋다" },
+        { "user": "겜덕후", "badge": "subscriber", "text": "다음 공포겜 뭐 할거예요??" },
+        { "user": "잠자리", "badge": null, "text": "심장 쫄깃ㅋㅋ" }
+      ]
+    },
+    {
+      "id": "sora_clip_03",
+      "title": "은하시 맛집 추천 잡담방",
+      "duration": "3:48",
+      "views": "2.1K",
+      "gradient": "#1a1a2e, #16213e",
+      "chatLog": [
+        { "user": "맛집헌터", "badge": null, "text": "은하시 맛집 뭐 있어요?" },
+        { "user": "소라팬1호", "badge": "subscriber", "text": "달빛동 추천했는데 거기 학교 근처 아니지않음?", "isHint": true, "hintNote": "한별공대는 별내동인데 달빛동 추천 = 위치 모순" },
+        { "user": "별내동주민", "badge": null, "text": "별내동 카페거리 맛집 많은데 왜 달빛동을 추천하지", "isHint": true, "hintNote": "실제 별내동 주민의 의문" },
+        { "user": "관광객", "badge": null, "text": "달빛헌 가봤는데 맛있긴 함" },
+        { "user": "게임러", "badge": null, "text": "맛집 얘기 그만하고 겜 해주세요" },
+        { "user": "먹방러", "badge": null, "text": "소라 먹방도 해줘" },
+        { "user": "퀀텀보이", "badge": "subscriber", "text": "소라는 뭘 해도 재밌음ㅋ" },
+        { "user": "새벽시청자", "badge": null, "text": "은하시 토박이래놓고 해변도시 얘기를 자주 하던데", "isHint": true, "hintNote": "출신지 주장과 SNS 과거 트윗의 모순" }
+      ]
+    }
+  ],
+  "leon": [
+    {
+      "id": "leon_clip_01",
+      "title": "리온의 심야 비트메이킹 라이브",
+      "duration": "4:15",
+      "views": "6.3K",
+      "gradient": "#a855f7, #6366f1",
+      "chatLog": [
+        { "user": "비트러버", "badge": null, "text": "오 비트 개좋다" },
+        { "user": "프로듀서지망", "badge": null, "text": "FL Studio 쓰는구나? 작곡과에서 그거 잘 안쓰지않나", "isHint": true, "hintNote": "작곡과 필수 SW에 FL Studio 없음" },
+        { "user": "리온팬", "badge": "subscriber", "text": "리온 최고♥" },
+        { "user": "음악학도", "badge": null, "text": "작곡과면 Sibelius나 Finale 쓸 줄 알텐데", "isHint": true, "hintNote": "작곡과 필수 SW와 불일치" },
+        { "user": "새벽감성", "badge": null, "text": "이 시간에 이런 비트라니 감성터짐" },
+        { "user": "댄서", "badge": null, "text": "이 비트로 안무 짜고싶다" },
+        { "user": "은하예대", "badge": null, "text": "우리 학교 맞긴 한데 축제때 본 적은 있음", "isHint": true, "hintNote": "은하예대 재학은 확인되나 학과는 미확인" },
+        { "user": "감성충", "badge": "subscriber", "text": "리온 목소리도 좋은데 노래도 해줘" }
+      ]
+    },
+    {
+      "id": "leon_clip_02",
+      "title": "즉흥 작곡 챌린지 (시청자 키워드)",
+      "duration": "6:22",
+      "views": "9.1K",
+      "gradient": "#2d1b4e, #4a1d8e",
+      "chatLog": [
+        { "user": "키워드왕", "badge": null, "text": "키워드: 새벽 고양이 커피" },
+        { "user": "리온팬", "badge": "subscriber", "text": "와 진짜 바로 만드네" },
+        { "user": "작곡전공", "badge": null, "text": "곡 자체는 좋은데 작곡과 수준치고 화성 진행이 단순한 편...", "isHint": true, "hintNote": "독학 수준이지 정규 교육 수준 아님" },
+        { "user": "분위기장인", "badge": null, "text": "리온 감성 미쳤다" },
+        { "user": "보컬팬", "badge": null, "text": "중간에 흥얼거리는거 노래 너무 잘하는데?? 작곡보다 보컬이 낫지않나", "isHint": true, "hintNote": "보컬 실력이 작곡 실력보다 월등" },
+        { "user": "새벽감성", "badge": "subscriber", "text": "이런 방송 매일 해주세요" },
+        { "user": "댄서", "badge": null, "text": "이것도 좋다" },
+        { "user": "궁금해요", "badge": null, "text": "오케스트레이션 수업 어때요?" }
+      ]
+    },
+    {
+      "id": "leon_clip_03",
+      "title": "데뷔 1주년 기념 노래방",
+      "duration": "3:55",
+      "views": "11.2K",
+      "gradient": "#1a1030, #3b1d6e",
+      "chatLog": [
+        { "user": "1주년축하", "badge": "subscriber", "text": "리온 1주년 축하해!!" },
+        { "user": "감성충", "badge": null, "text": "노래 미쳤다 소름" },
+        { "user": "성악전공", "badge": null, "text": "이거 메조소프라노 정도 음역인데 보이스 트레이닝 확실히 받은 사람이네", "isHint": true, "hintNote": "전문 보컬 트레이닝 흔적 — 작곡 전공이라면서?" },
+        { "user": "리온팬", "badge": "subscriber", "text": "작곡도 잘하고 노래도 잘하고 뭐야..." },
+        { "user": "궁금해요", "badge": null, "text": "노래 이렇게 잘하면 보컬 전공 아니에요?ㅋㅋ", "isHint": true, "hintNote": "시청자도 의심하는 수준의 보컬 실력" },
+        { "user": "1주년축하", "badge": null, "text": "앵콜!!" },
+        { "user": "비트러버", "badge": null, "text": "자작곡으로 불러주세요" },
+        { "user": "새벽감성", "badge": "subscriber", "text": "울컥했다 진짜" }
+      ]
+    }
+  ],
+  "miru": [
+    {
+      "id": "miru_clip_01",
+      "title": "오늘의 자취요리: 된장찌개편",
+      "duration": "3:22",
+      "views": "3.1K",
+      "gradient": "#f472b6, #fb923c",
+      "chatLog": [
+        { "user": "먹방러", "badge": null, "text": "된장찌개 맛있겠다" },
+        { "user": "미루팬1호", "badge": "subscriber", "text": "미루 요리 매번 맛있어보여" },
+        { "user": "맛집헌터", "badge": null, "text": "달빛헌 시그니처 갈비찜 레시피 알려주세요!", "isHint": false },
+        { "user": "요리초보", "badge": null, "text": "미루 칼질이 프로급인데;; 일반 직원 수준이 아닌것 같은", "isHint": true, "hintNote": "단순 직원치고 칼질이 너무 능숙 — 오랫동안 주방에서 자란 사람" },
+        { "user": "달콩팬", "badge": "subscriber", "text": "된장찌개 레시피 공유해주세요" },
+        { "user": "궁금해요", "badge": null, "text": "근데 달빛헌 직원 중에 미루 본 사람이 없다는데?", "isHint": true, "hintNote": "직원 유니폼 안 입고 2층에서 생활했으니 목격 안 됨" },
+        { "user": "먹방러", "badge": null, "text": "맛있겠다ㅠㅠ" },
+        { "user": "자취생", "badge": null, "text": "자취생 공감 폭발" }
+      ]
+    },
+    {
+      "id": "miru_clip_02",
+      "title": "달빛헌 추억 먹방 토크",
+      "duration": "4:44",
+      "views": "5.5K",
+      "gradient": "#4a2030, #8b3a3a",
+      "chatLog": [
+        { "user": "미루팬1호", "badge": "subscriber", "text": "달빛헌 얘기 해주세요!" },
+        { "user": "궁금해요", "badge": null, "text": "달빛헌에서 어떤 일 했어요?" },
+        { "user": "미루", "badge": "streamer", "text": "저는... 주방 보조 같은 거? 이것저것 다 했어요ㅎㅎ" },
+        { "user": "달빛단골", "badge": null, "text": "그 식당 2층이 사장님 가족 사는 곳이래", "isHint": true, "hintNote": "달빛헌 2층 = 가족 거주 공간 정보" },
+        { "user": "먹방러", "badge": null, "text": "갈비찜 먹고싶다..." },
+        { "user": "루머러", "badge": null, "text": "달빛헌 사장님 딸이 버튜버 한다는 소문 들었는데 혹시 미루?", "isHint": true, "hintNote": "핵심 단서 — 오너셰프 딸이라는 직접적 소문" },
+        { "user": "먹방러", "badge": "subscriber", "text": "미루 오늘 뭐 먹었어요?" },
+        { "user": "자취생", "badge": null, "text": "달빛헌 월요일 휴무인거 아는사람?" }
+      ]
+    },
+    {
+      "id": "miru_clip_03",
+      "title": "장독대에서 놀았던 이야기 (감성주의)",
+      "duration": "2:58",
+      "views": "1.8K",
+      "gradient": "#2d1520, #5a2d3a",
+      "chatLog": [
+        { "user": "감성충", "badge": null, "text": "왜 울컥하지..." },
+        { "user": "미루", "badge": "streamer", "text": "새벽에 육수 끓이는 냄새가 2층까지 올라왔는데... 그 냄새가 싫었어요. 지금은 그리운데" },
+        { "user": "추리러", "badge": null, "text": "잠깐, 2층까지 올라왔다는건 거기서 살았다는거 아님??", "isHint": true, "hintNote": "2층 = 가족 거주 공간, 직원이 아닌 거주자" },
+        { "user": "미루팬1호", "badge": "subscriber", "text": "미루ㅠㅠ" },
+        { "user": "달빛단골", "badge": null, "text": "후원 장독대 진짜 있어요 가본적 있는데", "isHint": true, "hintNote": "장독대 존재 확인 — 위키 데이터와 크로스체크 가능" },
+        { "user": "감성충", "badge": null, "text": "미루 울지마ㅠ" },
+        { "user": "자취생", "badge": "subscriber", "text": "가족이랑 사이가 안 좋은건가..." },
+        { "user": "먹방러", "badge": null, "text": "미루 힘내요♥" }
+      ]
+    }
+  ]
+}
