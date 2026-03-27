@@ -60,7 +60,7 @@ export function shell(mainContent, { activeNav = 'home' } = {}) {
         </a>
         <div class="sb-divider"></div>
         <div class="sb-section-label">도구</div>
-        <a class="sb-item" href="#/home">
+        <a class="sb-item ${activeNav === 'searchlight' ? 'active' : ''}" href="#/searchlight">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.4"/><path d="M10 2v3M10 15v3M2 10h3M15 10h3M4.2 4.2l2.1 2.1M13.7 13.7l2.1 2.1M4.2 15.8l2.1-2.1M13.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
           <span>서치라이트</span>
         </a>

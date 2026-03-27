@@ -4,10 +4,12 @@ import { initTheme, bindThemeToggle } from './core/theme.js';
 import { shell } from './components/shell.js';
 import { renderChannelContent } from './pages/channel.js';
 import { renderSnsPage } from './pages/snsPage.js';
+import { renderSearchlight } from './pages/searchlight.js';
 import { thumbGradient } from './utils/gradients.js';
 import './styles/global.css';
 import './styles/channel.css';
 import './styles/sns.css';
+import './styles/searchlight.css';
 
 const app = document.getElementById('app');
 
@@ -108,6 +110,12 @@ function renderVerdict({ params }) {
   document.getElementById('btn-back').addEventListener('click', () => router.navigate('/character/' + params.id));
 }
 
+function renderSearchlightPage() {
+  store.state.phase = 'searchlight';
+  app.innerHTML = '<div id="searchlight-fullscreen"></div>';
+  renderSearchlight(document.getElementById('searchlight-fullscreen'));
+}
+
 function renderNotFound({ path }) {
   app.innerHTML = shell(`
     <div class="not-found">
@@ -138,6 +146,7 @@ router
     app.innerHTML = '<div id="sns-fullscreen"></div>';
     renderSnsPage(document.getElementById('sns-fullscreen'), params.id, params.platform);
   })
+  .on('/searchlight', renderSearchlightPage)
   .on('/verdict/:id', renderVerdict)
   .notFound(renderNotFound)
   .start();
