@@ -131,13 +131,46 @@ initTheme();
 
 store.subscribe('investigationPoints', (val) => {
   const el = document.getElementById('hud-ip');
-  if (el) el.textContent = val;
+  if (!el) return;
+  el.textContent = val;
+  const badge = el.closest('.hud-badge');
+  if (!badge) return;
+  badge.classList.toggle('hud-low', val > 0 && val <= 3);
+  badge.classList.toggle('hud-depleted', val === 0);
 });
 
 store.subscribe('trustGauge', (val) => {
   const el = document.getElementById('hud-trust');
   if (el) el.textContent = val;
+  if (val <= 0) router.navigate('/ending/bad');
 });
+
+store.subscribe('phase', (val) => {
+  if (val === 'roundComplete') {
+    if (store.isGameOver()) {
+      router.navigate('/ending/bad');
+    } else {
+      router.navigate('/ending/fake');
+    }
+  }
+});
+
+function renderEnding({ params }) {
+  store.state.phase = 'ending';
+  const isBad = params.type === 'bad';
+  app.innerHTML = shell(`
+    <div class="ending-page">
+      <h2>${isBad ? '게임 오버' : '축하합니다!'}</h2>
+      <p>${isBad ? '신뢰도가 바닥났습니다... 더 이상 방송국에서 일할 수 없습니다.' : 'R1 튜토리얼을 클리어했습니다! (페이크엔딩은 P6에서 구현 예정)'}</p>
+      <button class="btn-verdict" id="btn-restart">다시 시작</button>
+    </div>
+  `);
+  bindThemeToggle();
+  document.getElementById('btn-restart').addEventListener('click', () => {
+    store.reset();
+    router.navigate('/home');
+  });
+}
 
 router
   .on('/home', renderHome)
@@ -148,6 +181,7 @@ router
   })
   .on('/searchlight', renderSearchlightPage)
   .on('/verdict/:id', renderVerdict)
+  .on('/ending/:type', renderEnding)
   .notFound(renderNotFound)
   .start();
 

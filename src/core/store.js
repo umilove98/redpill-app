@@ -14,7 +14,7 @@ const initialState = {
   // 현재 라운드
   currentRound: 'R1',
 
-  // 조사 포인트 (라운드당 제한)
+  // 조사 토큰 (라운드당 제한)
   investigationPoints: r1.investigationPoints,
   maxInvestigationPoints: r1.investigationPoints,
 
@@ -97,7 +97,7 @@ export const store = {
     this.state.evidence = { ...this.state.evidence };
   },
 
-  /** 조사 포인트 소모 */
+  /** 조사 토큰 소모 */
   spendPoints(cost) {
     if (this.state.investigationPoints < cost) return false;
     this.state.investigationPoints -= cost;
@@ -111,11 +111,15 @@ export const store = {
       [characterId]: verdict
     };
     this.state.completedCharacters = [...this.state.completedCharacters, characterId];
+
+    if (this.isRoundComplete()) {
+      setTimeout(() => { this.state.phase = 'roundComplete'; }, 0);
+    }
   },
 
-  /** 신뢰도 감소 */
-  penalizeTrust(amount = gameConfig.trustGauge.wrongPenalty) {
-    this.state.trustGauge = Math.max(0, this.state.trustGauge + amount);
+  /** 신뢰도 감소 (양수/음수 모두 안전) */
+  penalizeTrust(amount = 25) {
+    this.state.trustGauge = Math.max(0, this.state.trustGauge - Math.abs(amount));
   },
 
   /** 게임 오버 체크 */

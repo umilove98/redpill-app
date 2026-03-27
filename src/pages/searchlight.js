@@ -3,11 +3,13 @@
  * wiki.json 데이터를 검색하여 문서를 표시하고, 힌트 발견 시 증거 수집
  */
 import { router } from '../core/router.js';
+import { store } from '../core/store.js';
 import { trySpend, collectEvidence } from '../core/game.js';
 import { costs } from '../core/game.js';
 
 let wikiData = null;
 let searchHistory = [];
+const collectedHints = new Set();
 
 async function loadWiki() {
   if (wikiData) return wikiData;
@@ -288,7 +290,7 @@ export async function renderSearchlight(container) {
         <div class="sl-topbar-hud">
           <span class="sl-hud-badge">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M7 4v3l2 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-            <strong id="sl-hud-ip"></strong>P
+            <strong id="sl-hud-ip"></strong> 토큰
           </span>
         </div>
       </div>
@@ -301,7 +303,7 @@ export async function renderSearchlight(container) {
         <p class="sl-desc">은하시 종합 백과사전. 검색어를 입력하면 관련 문서를 찾아드립니다.</p>
         <div class="sl-search-box">
           <input type="text" class="sl-input" id="sl-input" placeholder="검색어 입력 (예: 한별공대, 달빛동, 작곡과...)" autocomplete="off" />
-          <button class="sl-btn" id="sl-btn">검색 <span class="sl-cost">${costs.searchlight}P</span></button>
+          <button class="sl-btn" id="sl-btn">검색 <span class="sl-cost">${costs.searchlight} 토큰</span></button>
         </div>
         <div class="sl-suggestions" id="sl-suggestions"></div>
       </div>
@@ -328,7 +330,6 @@ export async function renderSearchlight(container) {
   document.getElementById('sl-back').addEventListener('click', () => router.back());
 
   // HUD 포인트 표시
-  const { store } = await import('../core/store.js');
   const hudIp = document.getElementById('sl-hud-ip');
   if (hudIp) hudIp.textContent = store.state.investigationPoints;
   store.subscribe('investigationPoints', (val) => {
@@ -394,10 +395,16 @@ export async function renderSearchlight(container) {
       if (linkedArticle) showArticle(linkedArticle, target);
     });
 
-    // 힌트가 있는 note 요소에 증거 수집 표시
+    // 힌트가 있는 note 요소 → 증거 수집
+    const charId = store.state.activeCharacterId;
     const notes = target.querySelectorAll('.wiki-note');
     notes.forEach(note => {
       note.classList.add('wiki-hint-found');
+      const key = `${charId}_${article.id}`;
+      if (charId && !collectedHints.has(key)) {
+        collectedHints.add(key);
+        collectEvidence(charId, 'searchlight', note.textContent.trim(), 'medium');
+      }
     });
   }
 

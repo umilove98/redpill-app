@@ -32,13 +32,20 @@ export function updateProgress(charId, progress) {
   store.state.progress = { ...store.state.progress, [charId]: progress };
 }
 
-/** 포인트 소모 시도. 부족하면 false + 토스트 */
+/** 토큰 소모 시도. 부족하면 false + 토스트 */
 export function trySpend(cost) {
   if (store.state.investigationPoints < cost) {
-    toast('조사 포인트가 부족합니다!');
+    toast('조사 토큰이 부족합니다!');
     return false;
   }
   store.state.investigationPoints -= cost;
+
+  const remaining = store.state.investigationPoints;
+  if (remaining === 0) {
+    toast('조사 토큰을 모두 소진했습니다. 판정을 진행하세요.');
+  } else if (remaining <= 3) {
+    toast(`조사 토큰이 ${remaining}개 남았습니다!`);
+  }
   return true;
 }
 
@@ -47,7 +54,3 @@ export function collectEvidence(charId, source, content, strength) {
   store.addEvidence(charId, { source, content, strength });
 }
 
-/** 힌트 강도가 자동 증거 수집 대상인지 */
-export function isAutoCollect(strength) {
-  return strength === 'killer' || strength === 'strong';
-}

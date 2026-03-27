@@ -1,4 +1,4 @@
-import { costs, getProgress, collectEvidence } from '../../core/game.js';
+import { costs, getProgress, updateProgress, collectEvidence } from '../../core/game.js';
 import { revealCardList } from '../../components/revealCard.js';
 
 // 게시판 느낌 랜덤 데이터
@@ -18,7 +18,7 @@ export function renderCommunityTab(el, char) {
   el.innerHTML = `
     <div class="community-section">
       <h3 class="tab-section-title">커뮤니티 게시판</h3>
-      <p class="tab-section-desc">게시글을 열면 <strong>${costs.communityReveal}p</strong>가 소모됩니다.</p>
+      <p class="tab-section-desc">게시글을 열면 <strong>${costs.communityReveal} 토큰</strong>이 소모됩니다.</p>
       <div id="community-cards"></div>
     </div>
   `;
@@ -62,6 +62,7 @@ export function renderCommunityTab(el, char) {
       `;
     },
     onReveal: (_idx, item) => {
+      updateProgress(char.id, progress);
       if (item.type === 'real' && item.reliability === 'high') {
         collectEvidence(char.id, 'community', item.content, 'strong');
       }

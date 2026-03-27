@@ -236,6 +236,21 @@ body {
 
 .hud-ip svg { color: var(--accent-purple); }
 .hud-ip:hover { box-shadow: 0 0 0 2px var(--glow-purple); }
+.hud-ip.hud-low {
+  background: rgba(250, 204, 21, 0.15);
+  animation: hud-pulse 1.5s ease-in-out infinite;
+}
+.hud-ip.hud-depleted {
+  background: rgba(239, 68, 68, 0.15);
+}
+.hud-ip.hud-depleted strong { color: var(--accent-red); }
+.hud-ip.hud-depleted svg { color: var(--accent-red); }
+
+@keyframes hud-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
 .hud-trust svg { color: #facc15; }
 .hud-trust:hover { box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.15); }
 
