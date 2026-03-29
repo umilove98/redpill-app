@@ -1,0 +1,738 @@
+/* === 가상 공식 웹사이트 === */
+
+.fakesite {
+  min-height: 100vh;
+  background: var(--bg-body);
+  color: var(--text-primary);
+}
+
+/* Header */
+.fs-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--site-color);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.fs-header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 52px;
+}
+
+.fs-logo {
+  font-size: 17px;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: -0.3px;
+}
+
+.fs-nav {
+  display: flex;
+  gap: 4px;
+}
+
+.fs-nav-link {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: color 0.15s, background 0.15s;
+  cursor: pointer;
+}
+.fs-nav-link:hover { color: white; background: rgba(255,255,255,0.1); }
+.fs-nav-link.active { color: white; font-weight: 700; background: rgba(255,255,255,0.15); }
+
+.fs-domain {
+  font-size: 11px;
+  color: rgba(255,255,255,0.4);
+  font-family: var(--font-mono);
+}
+
+/* Body */
+.fs-body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+}
+
+/* Hero */
+.fs-hero {
+  margin: 0 -20px;
+  padding: 60px 40px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.fs-hero-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.fs-hero-korean {
+  font-family: 'Noto Serif KR', serif, var(--font-main);
+}
+
+.fs-hero-sub {
+  font-size: 15px;
+  color: rgba(255,255,255,0.7);
+}
+
+/* Section */
+.fs-section {
+  margin-bottom: 32px;
+}
+
+.fs-section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--site-color);
+}
+
+/* 공지사항 */
+.fs-notice-list {
+  list-style: none;
+}
+
+.fs-notice-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+.fs-notice-item:last-child { border-bottom: none; }
+
+.fs-notice-title { color: var(--text-primary); }
+.fs-notice-date { color: var(--text-muted); font-size: 13px; }
+
+/* 인사말 */
+.fs-greeting {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.fs-greeting-meta {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+.fs-greeting-meta strong {
+  color: var(--text-primary);
+  font-size: 16px;
+}
+
+.fs-greeting-text {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+/* 연혁 */
+.fs-timeline {
+  border-left: 2px solid var(--site-color);
+  padding-left: 20px;
+}
+
+.fs-timeline-item {
+  padding: 8px 0;
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.fs-timeline-year {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--site-color);
+  min-width: 50px;
+}
+
+.fs-timeline-event {
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+/* 통계 */
+.fs-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.fs-stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: center;
+}
+
+.fs-stat-label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.fs-stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* 학과/동아리 그리드 */
+.fs-dept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.fs-dept-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.fs-dept-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.fs-dept-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* 아이템 탭 (학과/동아리 공통) */
+.fs-item-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+
+.fs-item-tab {
+  padding: 10px 18px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font-main);
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  white-space: nowrap;
+}
+.fs-item-tab:hover {
+  color: var(--text-primary);
+  background: var(--bg-card-hover);
+}
+.fs-item-tab.active {
+  color: var(--text-primary);
+  font-weight: 700;
+  border-bottom-color: var(--site-color);
+}
+
+.fs-item-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+  min-height: 200px;
+}
+
+.fs-detail-body {
+  padding: 24px;
+}
+
+.fs-detail-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.fs-detail-body h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 20px 0 10px;
+}
+
+.fs-section-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: -12px;
+  margin-bottom: 16px;
+}
+
+.fs-dept-clickable {
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.15s, background 0.15s;
+}
+.fs-dept-clickable:hover {
+  border-color: var(--site-color);
+  background: var(--bg-card-hover);
+}
+
+.fs-dept-arrow {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.fs-dept-phone {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.fs-dept-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.fs-dept-desc-full {
+  font-size: 14px;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.fs-contact-info {
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--bg-input);
+  border-radius: var(--radius);
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* 교육과정 */
+.fs-curriculum {
+  margin-bottom: 20px;
+}
+
+.fs-cur-year {
+  margin-bottom: 12px;
+}
+
+.fs-cur-year h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.fs-cur-sem {
+  display: flex;
+  gap: 12px;
+  padding: 6px 0;
+  font-size: 13px;
+  border-bottom: 1px solid var(--border);
+}
+
+.fs-cur-sem-label {
+  color: var(--text-muted);
+  min-width: 50px;
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.fs-cur-subjects {
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+/* 시간표 탭 */
+.fs-schedule-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.fs-sched-tab {
+  padding: 6px 14px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: var(--font-main);
+  transition: all 0.15s;
+}
+.fs-sched-tab:hover {
+  border-color: var(--site-color);
+  color: var(--text-primary);
+}
+.fs-sched-tab.active {
+  background: var(--site-color);
+  color: white;
+  border-color: var(--site-color);
+}
+
+.fs-club-members {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  background: var(--bg-input);
+  padding: 2px 8px;
+  border-radius: 8px;
+}
+
+/* 학과 상세 */
+.fs-dept-detail {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.fs-dept-detail-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.fs-dept-detail-focus {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.fs-dept-detail h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin: 16px 0 8px;
+}
+
+/* 전공 카드 */
+.fs-majors {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.fs-major-card {
+  background: var(--bg-body);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+}
+
+.fs-major-card h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.fs-major-sw, .fs-major-facility {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+.fs-admission-method {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+/* 테이블 */
+.fs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin: 8px 0;
+}
+.fs-table th {
+  background: var(--bg-input);
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-align: left;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+}
+.fs-table td {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+}
+
+/* 리스트 */
+.fs-list {
+  margin: 8px 0 12px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* 참고 박스 */
+.fs-note {
+  background: rgba(0,0,0,0.1);
+  border-left: 3px solid var(--site-color);
+  padding: 10px 14px;
+  margin: 12px 0;
+  border-radius: 0 6px 6px 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .fs-note {
+  background: rgba(255,255,255,0.03);
+}
+
+/* 정보 카드 */
+.fs-info-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.fs-info-row {
+  display: flex;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  gap: 12px;
+}
+.fs-info-row:last-child { border-bottom: none; }
+
+.fs-info-label {
+  color: var(--text-muted);
+  min-width: 80px;
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+/* 메뉴 */
+.fs-menu-type {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.fs-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.fs-menu-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.fs-menu-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.fs-menu-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.fs-menu-price {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--site-color);
+}
+
+[data-theme="dark"] .fs-menu-price { color: #d4a574; }
+
+/* 채용공고 */
+.fs-recruit-position {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.fs-recruit-reqs li {
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+/* 자료실 */
+.fs-file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.fs-file-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.fs-file-item:last-child { border-bottom: none; }
+
+.fs-file-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.fs-file-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.fs-file-title {
+  display: block;
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.fs-file-meta {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.fs-file-download {
+  font-size: 13px;
+  color: var(--text-muted);
+  background: var(--bg-input);
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: not-allowed;
+  flex-shrink: 0;
+}
+
+/* 입학 안내 */
+.fs-admission-type {
+  margin-bottom: 20px;
+}
+
+.fs-admission-type h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.fs-admission-note {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.fs-faq-item {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.fs-faq-item:last-child { border-bottom: none; }
+
+.fs-faq-q {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.fs-faq-a {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Footer */
+.fs-footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.fs-footer-domain {
+  font-family: var(--font-mono);
+  margin-top: 4px;
+}
+
+/* 서치라이트로 돌아가기 */
+.fs-back-game {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--bg-gnb);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 10px 18px;
+  border-radius: 24px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: var(--font-main);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  transition: color 0.15s, border-color 0.15s;
+  z-index: 200;
+}
+.fs-back-game:hover {
+  color: var(--accent-purple);
+  border-color: var(--accent-purple);
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .fs-nav { display: none; }
+  .fs-hero { padding: 40px 20px; }
+  .fs-hero-title { font-size: 22px; }
+  .fs-dept-grid, .fs-menu-grid, .fs-stats-grid { grid-template-columns: 1fr; }
+}

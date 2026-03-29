@@ -68,6 +68,12 @@ export function shell(mainContent, { activeNav = 'home' } = {}) {
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4h12v12H4z" stroke="currentColor" stroke-width="1.3"/><path d="M4 8h12M8 8v8" stroke="currentColor" stroke-width="1.2"/></svg>
           <span>판정표</span>
         </a>
+
+        <div class="sb-divider"></div>
+        <a class="sb-item sb-locked" href="javascript:void(0)" title="트루엔딩 클리어 후 해금">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="4" y="9" width="12" height="8" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M7 9V6a3 3 0 016 0v3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          <span>파란약 방송국</span>
+        </a>
       </aside>
       <main class="content">
         ${mainContent}

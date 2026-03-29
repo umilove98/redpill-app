@@ -364,6 +364,18 @@
 }
 
 /* 위키 내부 링크 */
+/* 공식 웹사이트 링크 (인포박스 내) */
+.wiki-site-link {
+  color: var(--accent-purple);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.15s;
+}
+.wiki-site-link:hover {
+  color: var(--accent-pink);
+  text-decoration: underline;
+}
+
 .wiki-link {
   color: var(--accent-green);
   cursor: pointer;
@@ -375,23 +387,11 @@
   text-decoration: underline;
 }
 
-/* 힌트/참고 박스 */
-.wiki-note {
-  background: rgba(0, 255, 163, 0.05);
-  border-left: 3px solid var(--accent-green);
-  padding: 10px 14px;
-  margin: 12px 0;
-  border-radius: 0 6px 6px 0;
-  font-size: 13px;
-  color: var(--text-secondary);
-}
-.wiki-hint-found {
-  animation: hint-glow 1s ease-in-out;
-}
-@keyframes hint-glow {
-  0% { box-shadow: none; }
-  50% { box-shadow: 0 0 12px var(--glow-green); }
-  100% { box-shadow: none; }
+/* 나무위키 [출처 필요] 스타일 */
+.wiki-citation {
+  font-size: 11px;
+  color: var(--accent-red);
+  cursor: default;
 }
 
 /* --- 반응형 --- */

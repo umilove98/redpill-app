@@ -331,6 +331,17 @@ body {
   background: var(--tint-pink);
 }
 
+/* Locked sidebar item */
+.sb-locked {
+  opacity: 0.3;
+  cursor: not-allowed !important;
+  position: relative;
+}
+.sb-locked:hover {
+  background: none !important;
+  color: var(--text-muted) !important;
+}
+
 .sb-divider {
   width: 40px;
   height: 1px;

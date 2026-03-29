@@ -5,11 +5,13 @@ import { shell } from './components/shell.js';
 import { renderChannelContent } from './pages/channel.js';
 import { renderSnsPage } from './pages/snsPage.js';
 import { renderSearchlight } from './pages/searchlight.js';
+import { renderFakeSite } from './pages/fakeSite.js';
 import { thumbGradient } from './utils/gradients.js';
 import './styles/global.css';
 import './styles/channel.css';
 import './styles/sns.css';
 import './styles/searchlight.css';
+import './styles/fakeSite.css';
 
 const app = document.getElementById('app');
 
@@ -180,6 +182,14 @@ router
     renderSnsPage(document.getElementById('sns-fullscreen'), params.id, params.platform);
   })
   .on('/searchlight', renderSearchlightPage)
+  .on('/site/:siteId', ({ params }) => {
+    app.innerHTML = '<div id="fakesite-fullscreen"></div>';
+    renderFakeSite(document.getElementById('fakesite-fullscreen'), params.siteId, 'main');
+  })
+  .on('/site/:siteId/:pageId', ({ params }) => {
+    app.innerHTML = '<div id="fakesite-fullscreen"></div>';
+    renderFakeSite(document.getElementById('fakesite-fullscreen'), params.siteId, params.pageId);
+  })
   .on('/verdict/:id', renderVerdict)
   .on('/ending/:type', renderEnding)
   .notFound(renderNotFound)
